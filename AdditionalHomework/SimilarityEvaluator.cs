@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace AdditionalHomework
 {
@@ -7,7 +8,7 @@ namespace AdditionalHomework
         public static string GetPercent(string source, string target)
         {
             var percent = CalculateProbableSimilarity(source, target);
-            return percent.ToString("P");
+            return percent.ToString("P", CultureInfo.InvariantCulture);
         }
 
         private static double CalculateProbableSimilarity(string source, string target)
