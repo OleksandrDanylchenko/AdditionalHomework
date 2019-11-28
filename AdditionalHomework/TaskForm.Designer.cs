@@ -39,14 +39,14 @@
             // 
             // ControlBox
             // 
-            resources.ApplyResources(this.ControlBox, "ControlBox");
             this.ControlBox.BackColor = System.Drawing.SystemColors.ControlLight;
+            resources.ApplyResources(this.ControlBox, "ControlBox");
             this.ControlBox.Name = "ControlBox";
             // 
             // CheckBox
             // 
-            resources.ApplyResources(this.CheckBox, "CheckBox");
             this.CheckBox.BackColor = System.Drawing.SystemColors.ControlLight;
+            resources.ApplyResources(this.CheckBox, "CheckBox");
             this.CheckBox.Name = "CheckBox";
             // 
             // CheckLabel
