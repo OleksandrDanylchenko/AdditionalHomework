@@ -17,6 +17,9 @@ namespace AdditionalHomework
             if (source.Length == 0 || target.Length == 0) return 0;
             if (source == target) return 1;
 
+            source = source.ToLower().Trim();
+            target = target.ToLower().Trim();
+
             var stepsToSame = ComputeLevenshteinDistance(source, target);
             return 1 - (stepsToSame / (double)Math.Max(source.Length, target.Length));
         }
@@ -26,9 +29,6 @@ namespace AdditionalHomework
         private static int ComputeLevenshteinDistance(string source, string target)
         {
             // Preparations
-            source = source.ToLower().Trim();
-            target = target.ToLower().Trim();
-
             var sourceWordCount = source.Length;
             var targetWordCount = target.Length;
 
