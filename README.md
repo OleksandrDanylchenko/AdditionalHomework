@@ -7,6 +7,6 @@
 
 Для кращого розуміння терміну «у реальному часі» варто ознайомитися з подією PropertyChanged та класом Binding, який дозволяє «зв’язувати» поля форми з властивостями класів.
 
-Приклад виконання:
+#### Приклад виконання:
 
 ![Implementation example](https://media.giphy.com/media/lSa5mTqJKpvty87oQz/giphy.gif)
