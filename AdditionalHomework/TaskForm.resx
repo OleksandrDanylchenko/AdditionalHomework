@@ -4099,9 +4099,6 @@
   <data name="&gt;&gt;PercentLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="CheckLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 9</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="CheckBox.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4149,9 +4146,6 @@
   <data name="CheckBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>26, 91</value>
   </data>
-  <data name="&gt;&gt;SimilarityLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;ControlBox.Name" xml:space="preserve">
     <value>ControlBox</value>
   </data>
@@ -4164,8 +4158,8 @@
   <data name="&gt;&gt;CheckLabel.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="SimilarityLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>HP Simplified, 36pt, style=Bold</value>
+  <data name="&gt;&gt;SimilarityLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="CheckLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>HP Simplified, 36pt, style=Bold</value>
@@ -4173,8 +4167,8 @@
   <data name="&gt;&gt;ControlLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="PercentLabel.Text" xml:space="preserve">
-    <value>label1</value>
+  <data name="CheckLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 9</value>
   </data>
   <data name="PercentLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4184,9 +4178,6 @@
   </data>
   <data name="ControlLabel.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="&gt;&gt;ControlLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ControlBox.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -4200,20 +4191,32 @@
   <data name="ControlLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>HP Simplified, 36pt, style=Bold</value>
   </data>
+  <data name="&gt;&gt;PercentLabel.Name" xml:space="preserve">
+    <value>PercentLabel</value>
+  </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>SF Mono, 10.8pt</value>
   </data>
-  <data name="ControlBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>HP Simplified, 16.2pt, style=Bold</value>
+  <data name="&gt;&gt;ControlLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="PercentLabel.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
+  <data name="SimilarityLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>HP Simplified, 36pt, style=Bold</value>
+  </data>
   <data name="&gt;&gt;SimilarityLabel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="ControlLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>509, 9</value>
+  </data>
   <data name="CheckBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>477, 592</value>
+  </data>
+  <data name="PercentLabel.Text" xml:space="preserve">
+    <value>label1</value>
   </data>
   <data name="CheckLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4242,11 +4245,8 @@
   <data name="ControlBox.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;PercentLabel.Name" xml:space="preserve">
-    <value>PercentLabel</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TaskForm</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>LevenshteinTask</value>
@@ -4260,8 +4260,8 @@
   <data name="ControlLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="ControlLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>509, 9</value>
+  <data name="ControlBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>HP Simplified, 16.2pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;ControlLabel.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -4278,8 +4278,8 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1063, 807</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>TaskForm</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;PercentLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

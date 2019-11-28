@@ -68,6 +68,7 @@
             // 
             resources.ApplyResources(this.PercentLabel, "PercentLabel");
             this.PercentLabel.Name = "PercentLabel";
+            this.PercentLabel.UseCompatibleTextRendering = true;
             // 
             // TaskForm
             // 
