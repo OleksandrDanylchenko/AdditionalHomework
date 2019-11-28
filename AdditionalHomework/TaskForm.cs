@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace AdditionalHomework
 {
@@ -22,10 +14,13 @@ namespace AdditionalHomework
                 true, DataSourceUpdateMode.OnPropertyChanged);
             CheckBox.DataBindings.Add(dataBindCheck);
 
-            var dataBindControl = new Binding("Text", infoBoxes, "CheckBoxText",
+            var dataBindControl = new Binding("Text", infoBoxes, "ControlBoxText",
                 true, DataSourceUpdateMode.OnPropertyChanged);
             ControlBox.DataBindings.Add(dataBindControl);
 
+            var dataBindSimilarity = new Binding("Text", infoBoxes, "SimilarityPercent",
+                true, DataSourceUpdateMode.OnPropertyChanged);
+            PercentLabel.DataBindings.Add(dataBindSimilarity);
         }
     }
 }

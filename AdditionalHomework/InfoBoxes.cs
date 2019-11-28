@@ -1,41 +1,38 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.ComponentModel;
 
 namespace AdditionalHomework
 {
     internal class InfoBoxes : INotifyPropertyChanged
     {
         private string _checkBoxText;
+
         public string CheckBoxText
         {
             get => _checkBoxText;
             set
             {
-                if (_checkBoxText == value) return;
+                if (CheckBoxText == value) return;
                 _checkBoxText = value;
                 OnPropertyChanged(CheckBoxText);
             }
         }
 
         private string _controlBoxText;
+
         public string ControlBoxText
         {
             get => _controlBoxText;
             set
             {
-                if (_controlBoxText == value) return;
+                if (ControlBoxText == value) return;
                 _controlBoxText = value;
-                OnPropertyChanged(CheckBoxText);
+                OnPropertyChanged(ControlBoxText);
             }
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        public string SimilarityPercent => SimilarityEvaluator.GetPercent(CheckBoxText, ControlBoxText);
 
+        public event PropertyChangedEventHandler PropertyChanged;
         private void OnPropertyChanged(string name)
         {
             var handler = PropertyChanged;

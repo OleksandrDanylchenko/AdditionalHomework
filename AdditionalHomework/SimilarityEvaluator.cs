@@ -1,10 +1,17 @@
-﻿﻿using System;
+﻿using System;
+using System.Globalization;
 
 namespace AdditionalHomework
 {
-    internal static class ElementsComparer
+    internal static class SimilarityEvaluator
     {
-        public static double CalculateProbableSimilarity(string source, string target)
+        public static string GetPercent(string source, string target)
+        {
+            var percent = CalculateProbableSimilarity(source, target);
+            return percent.ToString("P");
+        }
+
+        private static double CalculateProbableSimilarity(string source, string target)
         {
             if (source == null || target == null) return 0;
             if (source.Length == 0 || target.Length == 0) return 0;
