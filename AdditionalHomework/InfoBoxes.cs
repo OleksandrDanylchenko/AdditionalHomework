@@ -5,7 +5,6 @@ namespace AdditionalHomework
     internal class InfoBoxes : INotifyPropertyChanged
     {
         private string _checkBoxText;
-
         public string CheckBoxText
         {
             get => _checkBoxText;
@@ -18,7 +17,6 @@ namespace AdditionalHomework
         }
 
         private string _controlBoxText;
-
         public string ControlBoxText
         {
             get => _controlBoxText;
