@@ -347,35 +347,35 @@
   <data name="&gt;&gt;LoadFirstExprButton.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="LoadSecondExprButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>HP Simplified, 19.8pt</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="LoadSecondExprButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="LoadSecondExprButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>818, 854</value>
   </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="LoadSecondExprButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>340, 57</value>
   </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+  <data name="LoadSecondExprButton.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="button1.Text" xml:space="preserve">
+  <data name="LoadSecondExprButton.Text" xml:space="preserve">
     <value>Load</value>
   </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
+  <data name="&gt;&gt;LoadSecondExprButton.Name" xml:space="preserve">
+    <value>LoadSecondExprButton</value>
   </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+  <data name="&gt;&gt;LoadSecondExprButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;LoadSecondExprButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;LoadSecondExprButton.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="ClearSecondExprButton.Font" type="System.Drawing.Font, System.Drawing">
@@ -407,6 +407,15 @@
   </data>
   <data name="&gt;&gt;ClearSecondExprButton.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <metadata name="OpenFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="OpenFileDialog.Filter" xml:space="preserve">
+    <value>Rich Text Files (*.rtf)|*.rtf|Text Files (*.txt)|*.txt|XML Files (*.xml)|*.xml</value>
+  </data>
+  <data name="OpenFileDialog.Title" xml:space="preserve">
+    <value>Chose input file:</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -4389,8 +4398,17 @@
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>LevenshteinTask</value>
+  </data>
+  <data name="&gt;&gt;OpenFileDialog.Name" xml:space="preserve">
+    <value>OpenFileDialog</value>
+  </data>
+  <data name="&gt;&gt;OpenFileDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>TaskForm</value>

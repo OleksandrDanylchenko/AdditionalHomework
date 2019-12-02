@@ -37,8 +37,9 @@
             this.PercentLabel = new System.Windows.Forms.Label();
             this.ClearFirstExprButton = new System.Windows.Forms.Button();
             this.LoadFirstExprButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.LoadSecondExprButton = new System.Windows.Forms.Button();
             this.ClearSecondExprButton = new System.Windows.Forms.Button();
+            this.OpenFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // SecondBox
@@ -86,12 +87,14 @@
             resources.ApplyResources(this.LoadFirstExprButton, "LoadFirstExprButton");
             this.LoadFirstExprButton.Name = "LoadFirstExprButton";
             this.LoadFirstExprButton.UseVisualStyleBackColor = true;
+            this.LoadFirstExprButton.Click += new System.EventHandler(this.LoadFirstExprButton_Click);
             // 
-            // button1
+            // LoadSecondExprButton
             // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.LoadSecondExprButton, "LoadSecondExprButton");
+            this.LoadSecondExprButton.Name = "LoadSecondExprButton";
+            this.LoadSecondExprButton.UseVisualStyleBackColor = true;
+            this.LoadSecondExprButton.Click += new System.EventHandler(this.LoadSecondExprButton_Click);
             // 
             // ClearSecondExprButton
             // 
@@ -100,11 +103,15 @@
             this.ClearSecondExprButton.UseVisualStyleBackColor = true;
             this.ClearSecondExprButton.Click += new System.EventHandler(this.ClearSecondExprButton_Click);
             // 
+            // OpenFileDialog
+            // 
+            resources.ApplyResources(this.OpenFileDialog, "OpenFileDialog");
+            // 
             // TaskForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.LoadSecondExprButton);
             this.Controls.Add(this.ClearSecondExprButton);
             this.Controls.Add(this.LoadFirstExprButton);
             this.Controls.Add(this.ClearFirstExprButton);
@@ -117,6 +124,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "TaskForm";
+            this.Load += new System.EventHandler(this.TaskForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,8 +140,9 @@
         private System.Windows.Forms.Label PercentLabel;
         private System.Windows.Forms.Button ClearFirstExprButton;
         private System.Windows.Forms.Button LoadFirstExprButton;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button LoadSecondExprButton;
         private System.Windows.Forms.Button ClearSecondExprButton;
+        private System.Windows.Forms.OpenFileDialog OpenFileDialog;
     }
 }
 

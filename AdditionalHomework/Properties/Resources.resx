@@ -114,4 +114,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Invalid format warning" xml:space="preserve">
+    <value>You can load only .txt, .rtf and .xml files!</value>
+  </data>
+  <data name="Invalid_format_title" xml:space="preserve">
+    <value>Invalid format</value>
+  </data>
 </root>
