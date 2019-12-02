@@ -10,17 +10,27 @@ namespace AdditionalHomework
 
             var infoBoxes = new InfoBoxes();
 
-            var dataBindCheck = new Binding("Text", infoBoxes, "CheckBoxText",
+            var firstExprBind = new Binding("Text", infoBoxes, "FirstBoxText",
                 true, DataSourceUpdateMode.OnPropertyChanged);
-            CheckBox.DataBindings.Add(dataBindCheck);
+            FirstBox.DataBindings.Add(firstExprBind);
 
-            var dataBindControl = new Binding("Text", infoBoxes, "ControlBoxText",
+            var secondExprBind = new Binding("Text", infoBoxes, "SecondBoxText",
                 true, DataSourceUpdateMode.OnPropertyChanged);
-            ControlBox.DataBindings.Add(dataBindControl);
+            SecondBox.DataBindings.Add(secondExprBind);
 
-            var dataBindSimilarity = new Binding("Text", infoBoxes, "SimilarityPercent",
+            var similarityBind = new Binding("Text", infoBoxes, "SimilarityPercent",
                 true, DataSourceUpdateMode.OnPropertyChanged);
-            PercentLabel.DataBindings.Add(dataBindSimilarity);
+            PercentLabel.DataBindings.Add(similarityBind);
+        }
+
+        private void ClearFirstExprButton_Click(object sender, System.EventArgs e)
+        {
+            FirstBox.Text = string.Empty;
+        }
+
+        private void ClearSecondExprButton_Click(object sender, System.EventArgs e)
+        {
+            SecondBox.Text = string.Empty;
         }
     }
 }

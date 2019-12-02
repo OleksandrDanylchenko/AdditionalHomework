@@ -29,25 +29,29 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TaskForm));
-            this.ControlBox = new System.Windows.Forms.RichTextBox();
-            this.CheckBox = new System.Windows.Forms.RichTextBox();
+            this.SecondBox = new System.Windows.Forms.RichTextBox();
+            this.FirstBox = new System.Windows.Forms.RichTextBox();
             this.CheckLabel = new System.Windows.Forms.Label();
             this.ControlLabel = new System.Windows.Forms.Label();
             this.SimilarityLabel = new System.Windows.Forms.Label();
             this.PercentLabel = new System.Windows.Forms.Label();
+            this.ClearFirstExprButton = new System.Windows.Forms.Button();
+            this.LoadFirstExprButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.ClearSecondExprButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // ControlBox
+            // SecondBox
             // 
-            this.ControlBox.BackColor = System.Drawing.SystemColors.ControlLight;
-            resources.ApplyResources(this.ControlBox, "ControlBox");
-            this.ControlBox.Name = "ControlBox";
+            this.SecondBox.BackColor = System.Drawing.SystemColors.ControlLight;
+            resources.ApplyResources(this.SecondBox, "SecondBox");
+            this.SecondBox.Name = "SecondBox";
             // 
-            // CheckBox
+            // FirstBox
             // 
-            this.CheckBox.BackColor = System.Drawing.SystemColors.ControlLight;
-            resources.ApplyResources(this.CheckBox, "CheckBox");
-            this.CheckBox.Name = "CheckBox";
+            this.FirstBox.BackColor = System.Drawing.SystemColors.ControlLight;
+            resources.ApplyResources(this.FirstBox, "FirstBox");
+            this.FirstBox.Name = "FirstBox";
             // 
             // CheckLabel
             // 
@@ -70,16 +74,46 @@
             this.PercentLabel.Name = "PercentLabel";
             this.PercentLabel.UseCompatibleTextRendering = true;
             // 
+            // ClearFirstExprButton
+            // 
+            resources.ApplyResources(this.ClearFirstExprButton, "ClearFirstExprButton");
+            this.ClearFirstExprButton.Name = "ClearFirstExprButton";
+            this.ClearFirstExprButton.UseVisualStyleBackColor = true;
+            this.ClearFirstExprButton.Click += new System.EventHandler(this.ClearFirstExprButton_Click);
+            // 
+            // LoadFirstExprButton
+            // 
+            resources.ApplyResources(this.LoadFirstExprButton, "LoadFirstExprButton");
+            this.LoadFirstExprButton.Name = "LoadFirstExprButton";
+            this.LoadFirstExprButton.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // ClearSecondExprButton
+            // 
+            resources.ApplyResources(this.ClearSecondExprButton, "ClearSecondExprButton");
+            this.ClearSecondExprButton.Name = "ClearSecondExprButton";
+            this.ClearSecondExprButton.UseVisualStyleBackColor = true;
+            this.ClearSecondExprButton.Click += new System.EventHandler(this.ClearSecondExprButton_Click);
+            // 
             // TaskForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ClearSecondExprButton);
+            this.Controls.Add(this.LoadFirstExprButton);
+            this.Controls.Add(this.ClearFirstExprButton);
             this.Controls.Add(this.PercentLabel);
             this.Controls.Add(this.SimilarityLabel);
             this.Controls.Add(this.ControlLabel);
             this.Controls.Add(this.CheckLabel);
-            this.Controls.Add(this.CheckBox);
-            this.Controls.Add(this.ControlBox);
+            this.Controls.Add(this.FirstBox);
+            this.Controls.Add(this.SecondBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "TaskForm";
@@ -90,12 +124,16 @@
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox ControlBox;
-        private System.Windows.Forms.RichTextBox CheckBox;
+        private System.Windows.Forms.RichTextBox SecondBox;
+        private System.Windows.Forms.RichTextBox FirstBox;
         private System.Windows.Forms.Label CheckLabel;
         private System.Windows.Forms.Label ControlLabel;
         private System.Windows.Forms.Label SimilarityLabel;
         private System.Windows.Forms.Label PercentLabel;
+        private System.Windows.Forms.Button ClearFirstExprButton;
+        private System.Windows.Forms.Button LoadFirstExprButton;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ClearSecondExprButton;
     }
 }
 

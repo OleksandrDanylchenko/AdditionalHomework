@@ -4,33 +4,34 @@ namespace AdditionalHomework
 {
     internal class InfoBoxes : INotifyPropertyChanged
     {
-        private string _checkBoxText;
+        private string _firstBoxText;
 
-        public string CheckBoxText
+        public string FirstBoxText
         {
-            get => _checkBoxText;
+            get => _firstBoxText;
             set
             {
-                if (CheckBoxText == value) return;
-                _checkBoxText = value;
-                OnPropertyChanged(CheckBoxText);
+                if (FirstBoxText == value) return;
+                _firstBoxText = value;
+                OnPropertyChanged(FirstBoxText);
             }
         }
 
-        private string _controlBoxText;
+        private string _secondBoxText;
 
-        public string ControlBoxText
+        public string SecondBoxText
         {
-            get => _controlBoxText;
+            get => _secondBoxText;
             set
             {
-                if (ControlBoxText == value) return;
-                _controlBoxText = value;
-                OnPropertyChanged(ControlBoxText);
+                if (SecondBoxText == value) return;
+                _secondBoxText = value;
+                OnPropertyChanged(SecondBoxText);
             }
         }
 
-        public string SimilarityPercent => SimilarityEvaluator.GetPercent(CheckBoxText, ControlBoxText);
+        public string SimilarityPercent => SimilarityEvaluator
+            .GetPercent(FirstBoxText, SecondBoxText);
 
         public event PropertyChangedEventHandler PropertyChanged;
         private void OnPropertyChanged(string name)
