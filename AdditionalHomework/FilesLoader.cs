@@ -25,12 +25,11 @@ namespace AdditionalHomework
     {
         public abstract void Load();
 
-        protected bool IsValidFileFormat(string filePath)
+        protected static bool IsValidFileFormat(string filePath)
         {
             filePath = filePath.ToLower();
             string[] validExtension = { ".txt", ".rtf", ".xml" };
             return validExtension.Any(filePath.Contains);
-
         }
     }
 

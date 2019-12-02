@@ -121,6 +121,7 @@
             this.Controls.Add(this.CheckLabel);
             this.Controls.Add(this.FirstBox);
             this.Controls.Add(this.SecondBox);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "TaskForm";
